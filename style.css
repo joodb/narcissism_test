@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(images/back-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.container-main {
+    width: 50%;
+    text-align: center;
+    text-shadow: 2px 1px 3px darkgrey;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.container-main .start-wrap h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 20px auto;
+}
+
+.container-main .start-wrap p {
+    color: white;
+    font-size: 13px;
+    margin: 20px auto;
+    line-height: 15px;
+}
+
+.container-main .start-wrap button {
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    background: #711BFF;
+    border-radius: 3px;
+}
+
+/* 질문 영역 */
+.question-wrap {
+    display: none;
+    text-align: center;
+}
+
+.question-wrap h2 {
+    color: white;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.question-wrap .btn-question {
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: #711BFF;
+    border-radius: 3px;
+}
+
+.start-wrap button:hover, .question-wrap .btn-question:hover {
+    background: #b286f9;
+}
+
+
+/* 결과 영역 */
+.result-wrap {
+    color: white;
+    display: none;
+    text-align: center;
+}
+
+.result-wrap .imgResult {
+    display: inline;
+    width: 40%;
+    text-align: center;
+}
+
+.result-wrap .titleResult {
+    margin: 20px 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.result-wrap .expResult {
+    
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer .cite {
+    color: white;
+    font-size: 8px;
+}
+
+
+.footer a {
+    color: white;
+    display: inline;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+    <section class="container-main">
+        <!-- 시작화면 -->
+        <article class="start-wrap" id="start-wrap">
+            <h1>나의 나르시시즘 레벨은?</h1>
+            <p>당신은 당신 자신을 얼마나 사랑하고 있나요? <br> 지금 당신의 나르시시즘 정도를 확인해보세요.</p>
+            <button type="button" onclick="start();">TEST START</button>
+        </article>
+        
+        <!-- 문제화면 -->
+        <article class="question-wrap" id="question-wrap">
+            <h2 id="title">문제</h2>
+            <input type="hidden" id="type" value="q-1">
+            <button type="button" id="A" class="btn-question">A</button>
+            <button type="button" id="B" class="btn-question">B</button>
+        </article>
+
+        <!-- 결과화면 -->
+        <article class="result-wrap" id="result-wrap" >
+            <img class="imgResult" id="imgResult" src="images/medal.png" alt="result">
+            <h2 class="titleResult" id="titleResult">asdfasdf</h2>
+            <p class="expResult" id="expResult">aaaaaaaaaaaa</p>
+        </article>
+        <input type="hidden" id="q-1" value="0">
+        <input type="hidden" id="q-2" value="0">
+        <input type="hidden" id="q-3" value="0">
+        <input type="hidden" id="q-4" value="0">
+        <input type="hidden" id="q-5" value="0">
+        <input type="hidden" id="q-6" value="0">
+        <input type="hidden" id="q-7" value="0">
+        <input type="hidden" id="q-8" value="0">
+    </section>
+    <footer class="footer">
+        <cite class="cite">
+            내용 참고 : <a href="https://together.kakao.com/hello/31/story">카카오같이가치-나르시시즘 레벨은?</a> / 
+            이미지 출처 : flaticon, unsplash</cite>
+    </footer>
+
+    <script src="index.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
